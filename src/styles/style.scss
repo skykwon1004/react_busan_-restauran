@@ -1,0 +1,218 @@
+$mc: #ff7100;
+$w_color: #fff;
+$b_color: #333;
+
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    background: url(../../public/assets/main01.jpg) no-repeat center center/cover;
+    color: $w_color;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 0.5;
+        height: 100%;
+    }
+
+    .header_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -170%);
+        z-index: 999;
+        // outline: 1px solid red;
+    }
+
+    h1 {
+        position: relative;
+        font-size: 41px;
+        margin: 0 0 15px 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 47.8%;
+            background: $mc;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 51%;
+            background: $mc;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 0 40px 0;
+    }
+
+    .gnb {
+        // outline: 1px solid red;
+        width: 1200px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            font-size: 15px;
+
+            li {
+                a {
+                    padding: 8px 25px;
+                    background: rgb(255, 113, 0, 0.3);
+                    border: 1px solid $mc;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin: 0 100px;
+
+    // background: red;
+    li {
+        h3 {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.3;
+            word-break: keep-all;
+            min-height: 30px;
+        }
+
+        figure {
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                margin: 0 0 30px 0;
+                border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+.map_wrap {
+    position: relative;
+    z-index: 9999999;
+    width: 1720px;
+    // height: 300px;
+    margin: 0 auto;
+    // border-radius: 10px;
+}
+
+#map {
+    position: absolute;
+    top: -580px;
+    left: 0;
+    width: 1720px;
+    height: 400px;
+    // margin: 0 auto;
+    // border: 10px solid rgb(249, 249, 249, 0.1);
+    outline: 3px solid rgb(249, 249, 249, 0.3);
+    padding: 15px;
+    // margin: 0 100px 100px 100px;
+    border-radius: 10px;
+}
+
+
+
+.map_title {
+    font-size: 31px;
+    font-weight: 500;
+    color: $mc;
+    margin: 50px 100px 30px 100px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+}
+
+.title {
+    font-size: 31px;
+    font-weight: 500;
+    color: $mc;
+    margin: 100px 100px 30px 100px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+//itm detail
+.ul_detail {
+    .detail_wrap {
+        display: flex;
+        gap: 50px;
+        margin: 0 100px;
+
+        * {
+            flex: 1;
+        }
+
+        dt {
+            font-style: normal;
+            color: #888;
+            float: left;
+            width: 100px;
+            min-height: 30px;
+            // outline: 1px solid red;
+        }
+
+        dd {
+            font-weight: 300;
+            min-height: 30px;
+            word-break: keep-all;
+            line-height: 1.3;
+        }
+
+        .desc_dt {
+            min-height: 80px;
+        }
+
+        .desc {
+            min-height: 80px;
+        }
+    }
+
+}
+
+
+.footer {
+    margin: 100px 0 0 0;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: #f9f9f9;
+    background: #444;
+}
