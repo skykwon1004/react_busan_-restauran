@@ -13,7 +13,7 @@ import './styles/style.scss';
 const App = () => {
     const [busanFood, setBusanFood] = useState([]);
     const [gugun, setGugun] = useState([]);
-    const key = `nmPIjJ%2Bj0FufPiP6k4BLPlq3n%2B46QZN%2B6hgSINrrxqk3nNwnoHX2ynqX6Dlgr3xFeivGPus2vgmh6Ifx1vdu1g%3D%3D`
+    const key = `8v5dULy%2FHf6B%2FC2EP8V7CXLuu6c0F7u83NRMm2RCXp3M5%2FxNuil6mDqpwa%2F9k9a6XP99gmGais6FWUpJ7vikzA%3D%3D`
     const getData = async () => {
         const r = await axios.get(`http://apis.data.go.kr/6260000/FoodService/getFoodKr?serviceKey=${key}&pageNo=1&numOfRows=150&resultType=json`);
         const d = await r.data.getFoodKr.item;
