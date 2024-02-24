@@ -86,6 +86,10 @@ $b_color: #333;
                     background: rgb(255, 113, 0, 0.3);
                     border: 1px solid $mc;
                     border-radius: 20px;
+
+                    &:hover {
+                        background: $mc;
+                    }
                 }
             }
         }
@@ -158,48 +162,81 @@ $b_color: #333;
     font-size: 31px;
     font-weight: 500;
     color: $mc;
-    margin: 100px 100px 30px 100px;
+    margin: 100px 0 30px 0;
     line-height: 50px;
     border-bottom: 1px solid #ddd;
 }
 
 
-//itm detail
-.ul_detail {
-    .detail_wrap {
-        display: flex;
-        gap: 50px;
-        margin: 0 100px;
+.store_info {
+    // background: #f9f9f9;
+    margin: 0 100px;
 
-        * {
-            flex: 1;
-        }
+    //itm detail
+    .ul_detail {
+        margin: 0 0 100px 0;
 
-        dt {
-            font-style: normal;
-            color: #888;
-            float: left;
-            width: 100px;
-            min-height: 30px;
-            // outline: 1px solid red;
-        }
+        .detail_wrap {
+            display: flex;
+            gap: 50px;
 
-        dd {
-            font-weight: 300;
-            min-height: 30px;
-            word-break: keep-all;
-            line-height: 1.3;
-        }
+            * {
+                flex: 1;
+            }
 
-        .desc_dt {
-            min-height: 80px;
-        }
+            dt {
+                font-style: normal;
+                color: #888;
+                float: left;
+                width: 100px;
+                min-height: 30px;
+                // outline: 1px solid red;
+            }
 
-        .desc {
-            min-height: 80px;
+            dd {
+                font-weight: 300;
+                min-height: 30px;
+                word-break: keep-all;
+                line-height: 1.3;
+            }
+
+            .desc_dt {
+                min-height: 80px;
+            }
+
+            .desc {
+                min-height: 80px;
+            }
         }
     }
 
+    //comment
+    .comment {
+        button {
+            cursor: pointer;
+        }
+
+        .arr {
+            margin: 0 0 20px 0;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+
+            input {
+                width: 1000px;
+                height: 40px;
+                font-size: 16px;
+                border: 0;
+                border-radius: 5px;
+                outline: none;
+                padding-left: 10px;
+                background-color: rgb(246, 246, 246);
+            }
+        }
+    }
 }
 
 .footer {
