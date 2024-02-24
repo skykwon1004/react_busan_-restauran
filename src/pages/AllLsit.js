@@ -5,7 +5,6 @@ import { useEffect } from "react";
 const AllLsit = ({ busanFood }) => {
 
     const { kakao } = window;
-
     const KakaoMapScript = () => {
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
             mapOption = {
