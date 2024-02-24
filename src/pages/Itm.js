@@ -41,7 +41,7 @@ const Itm = ({ busanFood }) => {
                 <div id="map"></div>
             </div>
             <div className="store_info">
-                <div className="title">{itm}</div>
+                <div className="sub_title">{itm}</div>
                 <ul className="ul_detail">
                     {
                         store &&

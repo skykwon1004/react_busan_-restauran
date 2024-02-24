@@ -162,15 +162,23 @@ $b_color: #333;
     font-size: 31px;
     font-weight: 500;
     color: $mc;
-    margin: 100px 0 30px 0;
+    margin: 100px 100px 30px 100px;
     line-height: 50px;
     border-bottom: 1px solid #ddd;
 }
 
-
 .store_info {
     // background: #f9f9f9;
     margin: 0 100px;
+
+    .sub_title {
+        font-size: 31px;
+        font-weight: 500;
+        color: $mc;
+        margin: 100px 0 30px 0;
+        line-height: 50px;
+        border-bottom: 1px solid #ddd;
+    }
 
     //itm detail
     .ul_detail {
