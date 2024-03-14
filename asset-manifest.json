@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react_busan_restauran/static/css/main.7a7c375f.css",
+    "main.css": "/react_busan_restauran/static/css/main.072a0044.css",
     "main.js": "/react_busan_restauran/static/js/main.20e5d53d.js",
     "static/media/main01.jpg": "/react_busan_restauran/static/media/main01.73d4a417499a08878d2b.jpg",
     "index.html": "/react_busan_restauran/index.html",
-    "main.7a7c375f.css.map": "/react_busan_restauran/static/css/main.7a7c375f.css.map",
+    "main.072a0044.css.map": "/react_busan_restauran/static/css/main.072a0044.css.map",
     "main.20e5d53d.js.map": "/react_busan_restauran/static/js/main.20e5d53d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a7c375f.css",
+    "static/css/main.072a0044.css",
     "static/js/main.20e5d53d.js"
   ]
 }
