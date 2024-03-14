@@ -2,6 +2,10 @@ $mc: #ff7100;
 $w_color: #fff;
 $b_color: #333;
 
+body {
+    overflow-x: hidden;
+}
+
 
 .header {
     position: relative;
@@ -132,6 +136,8 @@ $b_color: #333;
     // height: 300px;
     margin: 0 auto;
     // border-radius: 10px;
+    // outline: 1px solid red;
+    max-width: 100%;
 }
 
 #map {
@@ -140,12 +146,11 @@ $b_color: #333;
     left: 0;
     width: 1720px;
     height: 400px;
-    // margin: 0 auto;
-    // border: 10px solid rgb(249, 249, 249, 0.1);
     outline: 3px solid rgb(249, 249, 249, 0.3);
     padding: 15px;
     // margin: 0 100px 100px 100px;
     border-radius: 10px;
+    max-width: 100%;
 }
 
 .map_title {
